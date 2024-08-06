@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
             labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь'],  
             datasets: [
                 {
-                    label: 'Доход от займов (CNY)',
+                    label: 'Доход от инвестиций (CNY)',
                     data: [5000, 6000, 7000, 8000, 7500, 8500],  
                     backgroundColor: 'rgba(75, 192, 192, 0.6)',  
                     borderColor: 'rgba(75, 192, 192, 1)',  
                     borderWidth: 1
                 },
                 {
-                    label: 'Проценты по займам (CNY)',
+                    label: 'Проценты по инвестициям (CNY)',
                     data: [1000, 1200, 1500, 1700, 1600, 1800],  
                     backgroundColor: 'rgba(255, 159, 64, 0.6)',  
                     borderColor: 'rgba(255, 159, 64, 1)',  
@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     borderColor: 'rgba(153, 102, 255, 1)', 
                     borderWidth: 1
                 }
+                
             ]
         },
         options: {
