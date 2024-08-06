@@ -564,6 +564,45 @@ footer a{
   .nav-icon-7{
     display: none;
   }
+  .cocies-block{
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: -100px;
+    right: 0;
+    z-index: 20; 
+    background: #01133a;
+    color: #fff; 
+    transition: all 1s linear;
+    animation: show 1s ease-in-out forwards;
+    animation-delay: 3s;
+  }
+  @keyframes show {
+    0%{
+      opacity: 0;
+    }
+    40%{
+      opacity: 0; 
+    }
+    100%{
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  .cocies-block>div{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .cocies-block a{
+    color: #e56401;
+  }
+  .cocies-block button{
+    color: #fff;
+    background: #e56401;
+    padding: 10px 20px;
+    border: none;
+  }
   @media screen and (max-width: 992px) {
     .nav-list{
         margin-right: 0;
@@ -644,6 +683,21 @@ footer a{
         position: relative;
         cursor: pointer;
         display: inline-block;
+      }
+      .cocies-block>div{
+        padding: 0;
+      }
+      .cocies-block>div{
+        flex-direction: column;
+        gap: 20px;
+      }
+      .cocies-block{
+        bottom: -100%;
+        padding: 10px;
+      }
+      .cocies-block button{
+        max-width: 200px;
+        margin: 0 auto;
       }
       .nav-icon-7 span{
         background-color:#FFF;

@@ -55,23 +55,23 @@ document.addEventListener('DOMContentLoaded', function() {
             datasets: [
                 {
                     label: 'Доход от займов (CNY)',
-                    data: [5000, 6000, 7000, 8000, 7500, 8500], // Доходы от займов
-                    backgroundColor: 'rgba(75, 192, 192, 0.6)', // Светло-зеленый цвет
-                    borderColor: 'rgba(75, 192, 192, 1)', // Темно-зеленый цвет
+                    data: [5000, 6000, 7000, 8000, 7500, 8500],  
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',  
+                    borderColor: 'rgba(75, 192, 192, 1)',  
                     borderWidth: 1
                 },
                 {
                     label: 'Проценты по займам (CNY)',
-                    data: [1000, 1200, 1500, 1700, 1600, 1800], // Проценты
-                    backgroundColor: 'rgba(255, 159, 64, 0.6)', // Светло-оранжевый цвет
-                    borderColor: 'rgba(255, 159, 64, 1)', // Темно-оранжевый цвет
+                    data: [1000, 1200, 1500, 1700, 1600, 1800],  
+                    backgroundColor: 'rgba(255, 159, 64, 0.6)',  
+                    borderColor: 'rgba(255, 159, 64, 1)',  
                     borderWidth: 1
                 },
                 {
                     label: 'Общие инвестиции (CNY)',
-                    data: [8000, 9000, 9500, 10000, 10500, 11000], // Общие инвестиции
-                    backgroundColor: 'rgba(153, 102, 255, 0.6)', // Светло-фиолетовый цвет
-                    borderColor: 'rgba(153, 102, 255, 1)', // Темно-фиолетовый цвет
+                    data: [8000, 9000, 9500, 10000, 10500, 11000],  
+                    backgroundColor: 'rgba(153, 102, 255, 0.6)',  
+                    borderColor: 'rgba(153, 102, 255, 1)', 
                     borderWidth: 1
                 }
             ]
@@ -271,3 +271,11 @@ icons.forEach (icon => {
     navMob.classList.toggle('open')
   });
 });
+
+const btnCoc = document.querySelector('.btn-ok');
+const cocBox = document.querySelector('.cocies-block');
+
+btnCoc.addEventListener('click', (e) => {
+    e.preventDefault();
+    cocBox.style = 'display: none'
+})
