@@ -687,6 +687,10 @@ footer a{
       .cocies-block>div{
         padding: 0;
       }
+      .t_row{
+      grid-auto-columns: 1fr;  
+      }
+      
       .cocies-block>div{
         flex-direction: column;
         gap: 20px;
@@ -775,8 +779,14 @@ footer a{
       }
     .t_row{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-         gap :30px;
+        grid-template-columns: 1fr;
+         gap :16px;
+         max-width: 340px;
+         margin: 0 auto;
+    }
+    .form-w input, #interest_rate{
+      margin-left: auto;
+      margin-right: auto;
     }
     .btn-w{
         justify-content: center;
