@@ -735,8 +735,26 @@ footer a{
     .list-nums{
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 60px;
         margin: 0 auto 50px;
+    }
+    .list-nums li:nth-child(2){
+      border: 0;
+      border-top: 1px solid #9d9d9d;
+    border-bottom: 1px solid #b1b1b1;
+    padding: 30px 0;
+    }
+    .nums-block h2{
+      margin: 0 0 50px;
+    }
+    .nav-list{
+      gap: 0;
+    }
+    .logo{
+      max-width: 130px;
+    }
+    .first-screen nav{
+      padding: 0 10px;
     }
     .resev-block>div{
         flex-direction: column;
@@ -754,6 +772,12 @@ footer a{
         flex-direction: column-reverse;
         gap: 30px;
     }
+    .chart-w{
+      width: 100%;
+    }
+    .padd{
+      padding: 60px 0;
+    }
   }
   @media screen and (max-width: 575px) {
     .form-w input, #interest_rate{
@@ -766,7 +790,7 @@ footer a{
         padding: 0 10px;
     }
     h1{
-        font-size: 30px;
+        font-size: 34px;
     }
     .pop-up-box{
         width: 90%;
