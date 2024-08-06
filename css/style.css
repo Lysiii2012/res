@@ -306,6 +306,12 @@ p, li{
     box-sizing: border-box;
     margin: 10px 0 20px;
 }
+footer a{
+  color: rgb(9, 125, 154);
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+}
 .total-block-w{
     padding: 30px;
     border-radius: 20px;
